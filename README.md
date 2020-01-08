@@ -25,3 +25,15 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## Data Binding
+
+# 1) Interpolation : 
+it ties uo the (view) value from component.ts to the property and reflect in component.html, it's one way data binding
+
+# 2) Event Binding : 
+Binding the event click in component.html to method of the component.ts, Helps to bind view event to the component event.
+
+# 3) Two way Data binding (Banana in the box ) : value={{username}} ==> [{ngModel}] = "username"
+Have to put the property name in the box of banana from component.ts, when the view is loaded the initial data is coming from the component property (username='anurag'), whenever the user enters the new user name, modified data get binded to the component property 
