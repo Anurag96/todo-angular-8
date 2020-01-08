@@ -2,6 +2,7 @@
 
 //import org.springframework.boot.SpringApplication;
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 // import {AppComponent} from '../app.component'; 
 
 //@ComponentScan(value="com.anurag.anugular.demo")
@@ -15,16 +16,20 @@ import { Component, OnInit } from '@angular/core';
 //public class SpringBootFirstApplication implements SomeInterface{
 export class WelcomeComponent implements OnInit {   //export acts public identifier
 
-  message : string='Hello guys to this Welcome page' //defining the return type and defining a member variable
+  message : string='Hello guys welcome to this Welcome page' //defining the return type and defining a member variable
+  name=''
   //public SpringBootFirstApplication(){}
-  constructor() { }
+  //ActivatedRoute
+  constructor(private route: ActivatedRoute) { }
 
   //void init(){}
   ngOnInit(){  
   // this.message=5  this will give a compilation error
  
   //System.out.print
-    console.log(this.message)
+    // console.log(this.message)
+    // console.log(this.route.snapshot.params['name'])
+    this.name= this.route.snapshot.params['name'];
   }
 
 }
