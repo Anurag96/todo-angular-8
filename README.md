@@ -37,3 +37,5 @@ Binding the event click in component.html to method of the component.ts, Helps t
 
 # 3) Two way Data binding (Banana in the box ) : value={{username}} ==> [{ngModel}] = "username"
 Have to put the property name in the box of banana from component.ts, when the view is loaded the initial data is coming from the component property (username='anurag'), whenever the user enters the new user name, modified data get binded to the component property 
+
+ngModel is called angular directive.
